@@ -30,6 +30,7 @@
 | **[FedSCRT-model](https://github.com/AlphaaCode/FedSCRT-model)** | Federated learning for breast MRI subtype classification. 2.5D Gated-Attention MIL over 737 DCE-MRI volumes, a three-stage imbalance-aware training pipeline, and a 4-way benchmark of FedAvg / Momentum-FedAvg / SCAFFOLD / **FedSCRT**. Raw patient data never crosses a hospital boundary. | `PyTorch` `timm` `LoRA` `SimpleITK` `FastAPI` |
 | **[fedmri-app](https://github.com/AlphaaCode/fedmri-app)** | The product around the model: a doctor portal (upload → prediction → asynchronous FL round) and a patient portal, over a 3-hospital simulated network with per-hospital data silos enforced at the API layer. | `Next.js 14` `NestJS` `Prisma` `PostgreSQL` `FastAPI` `Flower` |
 | **[microhack-port-flow](https://github.com/AlphaaCode/microhack-port-flow)** | Port logistics operations app — truck &amp; driver assets, slot booking, dispatch dashboard and in-app chat, on Supabase auth with middleware-guarded routes. | `Next.js` `TypeScript` `Supabase` `Tailwind` |
+| **[Meayer-Frontend](https://github.com/Corsairs-Bejaia/Meayer-Frontend)** *(team)* | Reviewer console for **Meayer**, a doctor-credential verification platform for Algerian digital healthcare — medical reviewers verify, audit and approve AI-generated medical reports. I built the web frontend. | `React` `TanStack Router/Query` `Vite` `Radix` `Tailwind` |
 | **[SEMART-Fr](https://github.com/AlphaaCode/SEMART-Fr)** | Corporate site for an industrial equipment &amp; services company — fully localized (FR / EN / AR) with locale-routed services, equipment catalogue, case studies and blog. | `Next.js App Router` `next-intl` `shadcn/ui` |
 
 ---
@@ -64,15 +65,6 @@
   <img alt="Prisma" src="https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white">
   <img alt="Supabase" src="https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white">
   <img alt="Docker" src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white">
-</p>
-
----
-
-### GitHub
-
-<p align="center">
-  <img height="150" alt="Stats" src="https://github-readme-stats.vercel.app/api?username=AlphaaCode&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&theme=github_dark&title_color=1f6feb&icon_color=1f6feb&bg_color=0d1117">
-  <img height="150" alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AlphaaCode&layout=compact&hide_border=true&langs_count=8&theme=github_dark&title_color=1f6feb&bg_color=0d1117">
 </p>
 
 ---
