@@ -1,12 +1,8 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,55:0B3B3F,100:00E5C3&height=200&section=header&text=YAZID%20BENSEFIA&fontSize=48&fontColor=fff&animation=fadeIn&fontAlignY=38&desc=Software%20Engineer%20%7C%20Bioinformatics%20%26%20Applied%20AI&descAlignY=58&descSize=18" width="100%" />
+<img src="assets/header.svg" width="100%" alt="Yazid Bensefia, software engineer in bioinformatics and applied AI" />
 
 <br/>
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=3000&pause=1000&color=00E5C3&center=true&vCenter=true&width=560&lines=MSc+Bioinformatics+%40+USTHB+%F0%9F%A7%AC;Federated+Learning+for+Medical+Imaging+%F0%9F%94%AC;Full+Stack%3A+Next.js+%C2%B7+NestJS+%C2%B7+FastAPI+%F0%9F%9A%80" alt="Typing SVG" />
-
-<br/><br/>
 
 [![Portfolio](https://img.shields.io/badge/%F0%9F%8C%90%20Portfolio-161B22?style=for-the-badge&labelColor=00E5C3)](https://www.bensefiayazid.site/projects)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-161B22?style=for-the-badge&logo=linkedin&logoColor=00E5C3)](https://www.linkedin.com/in/bensefia-yazid-7604a9317/)
@@ -22,38 +18,70 @@
 
 <table>
 <tr>
-<td width="40%" align="center" valign="middle">
+<td width="62%" valign="top">
 
-<img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnJ4MTF5c3FwY3lpdDllajBzcms2ZzF1MmV5Z2dvZ2wyZGU5d2k0byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/udK21RQeWtaGQ/giphy.gif" width="280" alt="Lain at her PC" />
+```console
+yazid@algiers:~$ whoami
+Yazid Bensefia, software engineer
 
-</td>
-<td width="60%" valign="top">
+yazid@algiers:~$ cat now.txt
+studying   MSc Bioinformatics @ USTHB (2026)
+thesis     federated learning, breast DCE-MRI
+ships      Next.js / NestJS / FastAPI / Flutter
+languages  FR / EN / AR products, RTL included
 
-```yaml
-name:     Yazid Bensefia
-role:     Software Engineer (Bioinformatics)
-studying: MSc Bioinformatics @ USTHB, 2026
-location: Algiers, Algeria 🇩🇿
-focus:    Federated learning, medical imaging
-          and the apps built around it
+yazid@algiers:~$ echo $PROBLEM
+medical data is small, imbalanced, locked in hospitals
 ```
 
-Medical data is small, badly imbalanced and locked inside hospitals, so the scans can't just be pooled and trained on. My thesis is about training anyway: **federated learning for breast DCE-MRI subtype classification**, where raw patient data never leaves the building.
+I build models that learn from scans they never get to see, and the apps clinicians use to reach them.
 
-I also ship the product side, from the PyTorch training loop to the clinician-facing UI, in FR / EN / AR with RTL where it's needed.
+</td>
+<td width="38%" align="center" valign="middle">
+
+<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXlxZ3M4bGo3eDRzZmV4cDBtdTBkNWY5NTV1b2pnY3htZG02Z3l6eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/13pHvqbNfjaZyg/giphy.gif" width="300" alt="Anime hand reaching out" />
 
 </td>
 </tr>
 </table>
 
-<div align="center">
+---
 
-![Federated Learning](https://img.shields.io/badge/Federated_Learning-161B22?style=for-the-badge&labelColor=00E5C3)
-![Medical Imaging](https://img.shields.io/badge/Medical_Imaging-161B22?style=for-the-badge&labelColor=00E5C3)
-![Full Stack](https://img.shields.io/badge/Full_Stack-161B22?style=for-the-badge&labelColor=00E5C3)
-![Cross Platform](https://img.shields.io/badge/Cross--Platform_Apps-161B22?style=for-the-badge&labelColor=00E5C3)
+## 🧬 The problem I work on
 
-</div>
+Hospitals can't pool their MRI scans, so no single site has enough data, and what each does have is heavily imbalanced. In my thesis, each hospital trains on its own data against one shared backbone, and only the small classifier heads travel.
+
+```mermaid
+flowchart LR
+    BB(["🧠 Shared backbone<br/>feature extractor"]):::model
+
+    subgraph HA["🏥 Hospital A"]
+        SA[("DCE-MRI<br/>stays on site")]:::data --> HdA["Local head<br/>rebalanced"]:::model
+    end
+    subgraph HB["🏥 Hospital B"]
+        SB[("DCE-MRI<br/>stays on site")]:::data --> HdB["Local head<br/>rebalanced"]:::model
+    end
+    subgraph HC["🏥 Hospital C"]
+        SC[("DCE-MRI<br/>stays on site")]:::data --> HdC["Local head<br/>rebalanced"]:::model
+    end
+
+    BB -.->|features| SA
+    BB -.->|features| SB
+    BB -.->|features| SC
+    HdA ==>|"weights only"| AGG
+    HdB ==>|"weights only"| AGG
+    HdC ==>|"weights only"| AGG
+    AGG(["FedSCRT<br/>federated classifier"]):::out
+
+    classDef data fill:#0B3B3F,stroke:#00E5C3,color:#ffffff
+    classDef model fill:#161B22,stroke:#6EA8FF,color:#ffffff
+    classDef out fill:#00E5C3,stroke:#00E5C3,color:#0D1117
+    style HA fill:#0D1117,stroke:#30363D,color:#c9d1d9
+    style HB fill:#0D1117,stroke:#30363D,color:#c9d1d9
+    style HC fill:#0D1117,stroke:#30363D,color:#c9d1d9
+```
+
+<sub>Code: <a href="https://github.com/AlphaaCode/FedSCRT-model">FedSCRT-model</a> · the product around it: <a href="https://github.com/AlphaaCode/fedmri-app">fedmri-app</a></sub>
 
 ---
 
@@ -171,8 +199,6 @@ White-label eSIM app: one Flutter codebase shipped under several client brands, 
 
 ![Profile Views](https://komarev.com/ghpvc/?username=AlphaaCode&color=00E5C3&style=for-the-badge&label=VISITORS)
 
-<br/>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00E5C3,45:0B3B3F,100:0D1117&height=120&section=footer&text=Thanks%20for%20visiting&fontSize=26&fontColor=fff&animation=twinkling" width="100%" />
+<img src="assets/footer.svg" width="100%" alt="Thanks for stopping by" />
 
 </div>
