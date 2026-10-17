@@ -8,6 +8,8 @@
 
 <br/><br/>
 
+[![Portfolio](https://img.shields.io/badge/%F0%9F%8C%90%20Portfolio-161B22?style=for-the-badge&labelColor=00E5C3)](https://www.bensefiayazid.site/projects)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-161B22?style=for-the-badge&logo=linkedin&logoColor=00E5C3)](https://www.linkedin.com/in/bensefia-yazid-7604a9317/)
 [![Email](https://img.shields.io/badge/Email-161B22?style=for-the-badge&logo=gmail&logoColor=00E5C3)](mailto:bensefiayazid@gmail.com)
 [![Location](https://img.shields.io/badge/Algiers%2C_Algeria-161B22?style=for-the-badge&logo=googlemaps&logoColor=00E5C3)](https://maps.google.com/?q=Algiers)
 [![Followers](https://img.shields.io/github/followers/AlphaaCode?style=for-the-badge&logo=github&logoColor=00E5C3&labelColor=161B22&color=161B22)](https://github.com/AlphaaCode?tab=followers)
@@ -160,6 +162,8 @@ White-label eSIM app: one Flutter codebase shipped under several client brands, 
 
 <br/><br/>
 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-161B22?style=for-the-badge&logo=linkedin&logoColor=00E5C3)](https://www.linkedin.com/in/bensefia-yazid-7604a9317/)
+[![Portfolio](https://img.shields.io/badge/%F0%9F%8C%90%20Portfolio-161B22?style=for-the-badge&labelColor=00E5C3)](https://www.bensefiayazid.site/projects)
 [![Gmail](https://img.shields.io/badge/Gmail-161B22?style=for-the-badge&logo=gmail&logoColor=00E5C3)](mailto:bensefiayazid@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-161B22?style=for-the-badge&logo=github&logoColor=00E5C3)](https://github.com/AlphaaCode)
 
