@@ -15,10 +15,10 @@
 
 ### About
 
-- 🧬 **MSc Bioinformatics @ USTHB (2026)** — thesis on **federated learning for breast DCE-MRI molecular subtype classification**.
-- 🔬 My research problem in one line: deep learning on medical data that is **small, severely imbalanced, and siloed across hospitals** — where raw scans can never leave the building.
-- 🧠 Author of **FedSCRT**, a federated strategy that shares one centrally trained feature extractor and federates only locally rebalanced classification heads — the only strategy in my benchmark to beat the majority-class baseline on macro-F1 under non-IID hospital splits.
-- 🖥️ Full-stack in practice: **Next.js / NestJS / FastAPI**, TypeScript and Python end to end — from a PyTorch training loop to the clinician-facing UI that consumes it.
+- 🧬 **MSc Bioinformatics @ USTHB (2026)** thesis on **federated learning for breast DCE-MRI molecular subtype classification**.
+- 🔬 My research problem in one line: deep learning on medical data that is **small, severely imbalanced, and siloed across hospitals** where raw scans can never leave the building.
+- 🧠 Author of **FedSCRT**, a federated strategy that shares one centrally trained feature extractor and federates only locally rebalanced classification heads the only strategy in my benchmark to beat the majority-class baseline on macro-F1 under non-IID hospital splits.
+- 🖥️ Full-stack in practice: **Next.js / NestJS / FastAPI**, TypeScript and Python end to end from a PyTorch training loop to the clinician-facing UI that consumes it.
 - 🌍 I ship multilingual, cross-platform products (FR / EN / AR, RTL included).
 
 ---
